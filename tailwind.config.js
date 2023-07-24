@@ -18,7 +18,9 @@ export default {
             colors: {
                 'brand-gray-800': '#100C19',
                 'brand-gray-400': '#9C9C9C',
+                'brand-gray-200': '#D1D1D1',
                 'brand-white': '#F8F8F8',
+                'brand-primary-600': '#B02244',
                 'brand-primary-500': '#FF3565',
                 'brand-primary-400': '#FF7293',
                 'brand-primary-300': '#FFAEC1',

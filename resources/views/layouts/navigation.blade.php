@@ -1,3 +1,6 @@
+{{-- TODO: change links to list tags --}}
+{{-- TODO: Update hamburger colors --}}
+
 <nav x-data="{ open: false }">
     <!-- Primary Navigation Menu -->
     <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
