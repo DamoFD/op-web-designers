@@ -1,5 +1,6 @@
 {{-- TODO: change links to list tags --}}
 {{-- TODO: Update hamburger colors --}}
+{{-- TODO: fix break between sm and md --}}
 
 <nav x-data="{ open: false }">
     <!-- Primary Navigation Menu -->
