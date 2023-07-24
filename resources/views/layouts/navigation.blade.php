@@ -1,25 +1,35 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<nav x-data="{ open: false }">
     <!-- Primary Navigation Menu -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16">
+    <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 lg:h-22 lg:mt-2">
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
+                    <a href="{{ route('home') }}">
                         <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                    <x-nav-link :href="route('home')" :active="request()->routeIs('home')">
+                        {{ __('Home') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('about')" :active="request()->routeIs('about')">
+                        {{ __('About') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('process')" :active="request()->routeIs('process')">
+                        {{ __('What is the process?') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')">
+                        {{ __('Contact') }}
                     </x-nav-link>
                 </div>
             </div>
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
+                @if (Auth::user())
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
@@ -50,6 +60,11 @@
                         </form>
                     </x-slot>
                 </x-dropdown>
+                @else
+                    <x-nav-link :href="route('login')" :active="request()->routeIs('login')">
+                        {{ __('Login') }}
+                    </x-nav-link>
+                    @endif
             </div>
 
             <!-- Hamburger -->
@@ -67,19 +82,34 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
+            <x-responsive-nav-link :href="route('home')" :active="request()->routeIs('home')">
+                {{ __('Home') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('about')" :active="request()->routeIs('about')">
+                {{ __('About') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('process')" :active="request()->routeIs('process')">
+                {{ __('What is the process?') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('contact')" :active="request()->routeIs('contact')">
+                {{ __('Contact') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('login')" :active="request()->routeIs('login')">
+                {{ __('Login') }}
             </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
-        <div class="pt-4 pb-1 border-t border-gray-200">
+        <div class="pt-4 pb-1">
             <div class="px-4">
+                @if (Auth::user())
                 <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
                 <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
+                @endif
             </div>
 
             <div class="mt-3 space-y-1">
+                @if (Auth::user())
                 <x-responsive-nav-link :href="route('profile.edit')">
                     {{ __('Profile') }}
                 </x-responsive-nav-link>
@@ -94,6 +124,7 @@
                         {{ __('Log Out') }}
                     </x-responsive-nav-link>
                 </form>
+                    @endif
             </div>
         </div>
     </div>
