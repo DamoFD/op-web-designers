@@ -1,3 +1,3 @@
 <x-app-layout>
-    <h1>Home</h1>
+    <h1 class="text-brand-white font-inter">Home</h1>
 </x-app-layout>
