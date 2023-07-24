@@ -1,7 +1,7 @@
 <nav x-data="{ open: false }">
     <!-- Primary Navigation Menu -->
     <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16">
+        <div class="flex justify-between h-16 lg:h-22 lg:mt-2">
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
