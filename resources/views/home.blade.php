@@ -18,14 +18,18 @@
                 <p>Develop</p>
             </li>
         </ul>
-        <p class="text-brand-white font-inter px-8 py-4 text-center md:text-xl md:mt-6 lg:text-3xl">In the <strong class="uppercase">heart</strong> of Nevada, a collective of <em>creative minds</em> is reshaping the digital world. We at OP Web Designers, are <strong class="uppercase">pushing</strong> the boundaries of the web design industry.</p>
-        <div class="flex space-x-4 items-center md:space-x-6 md:mt-6">
-            <a href="{{route('contact')}}" class="bg-brand-primary-500 text-brand-white font-extrabold font-inter py-2 px-4 rounded-full hover:bg-brand-primary-600 uppercase md:text-xl">Contact Now</a>
-            <a href="#pricing" class="border-2 border-brand-white text-brand-white font-extrabold font-inter py-2 px-4 rounded-full hover:text-brand-primary-500 uppercase md:text-xl">View Pricing</a>
+        <p class="text-brand-white font-inter px-8 py-4 text-center max-w-7xl md:text-xl md:mt-6 lg:text-3xl">In the <strong class="uppercase">heart</strong> of Nevada, a collective of <em>creative minds</em> is reshaping the digital world. We at OP Web Designers, are <strong class="uppercase">pushing</strong> the boundaries of the web design industry.</p>
+        <div class="flex space-x-4 items-center md:space-x-6 md:mt-6 lg:space-x-44">
+            <a href="{{route('contact')}}" class="bg-brand-primary-500 text-brand-white font-extrabold font-inter py-2 px-4 rounded-full hover:bg-brand-primary-600 uppercase md:text-xl lg:text-2xl lg:px-8 lg:py-4">Contact Now</a>
+            <a href="#pricing" class="border-2 border-brand-white text-brand-white font-extrabold font-inter py-2 px-4 rounded-full hover:text-brand-primary-500 uppercase md:text-xl lg:text-2xl lg:px-8 lg:py-4">View Pricing</a>
         </div>
-        <img class="mt-8 md:w-96 md:mt-12" src="{{asset('svg/slipstream.svg')}}" alt="slipstream" />
-        <p class="text-brand-gray-400 text-5xl mt-4">BiddingFans.</p>
-        <p class="text-brand-gray-400 text-5xl mt-4">Jibbr.</p>
+        <div class="flex flex-col items-center mt-8 md:mt-12 lg:flex-row lg:justify-between lg:w-3/4 lg:text-center">
+            <div class="lg:w-1/3">
+                <img class="md:w-96" src="{{asset('svg/slipstream.svg')}}" alt="slipstream" />
+            </div>
+            <p class="text-brand-gray-400 text-5xl mt-4 lg:mt-0 lg:w-1/3">BiddingFans.</p>
+            <p class="text-brand-gray-400 text-5xl mt-4 lg:w-1/3">Jibbr.</p>
+        </div>
         <div class="absolute -bottom-[800px]">
             <x-sphere />
         </div>
