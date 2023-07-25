@@ -1,3 +1,7 @@
+{{-- TODO: change links to list tags --}}
+{{-- TODO: Update hamburger colors --}}
+{{-- TODO: fix break between sm and md --}}
+
 <nav x-data="{ open: false }">
     <!-- Primary Navigation Menu -->
     <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
