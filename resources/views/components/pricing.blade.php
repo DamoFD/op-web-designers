@@ -58,40 +58,44 @@
             </div>
             <a class="w-full block text-center font-extrabold text-brand-white bg-gradient-to-r from-brand-gray-400 to-brand-gray-900 px-4 py-2 rounded-xl" href="#">Get Basic</a>
         </div>
-        <div class="rounded-xl bg-brand-primary-500 flex flex-col p-4 w-1/3">
-            <div class="flex w-full justify-between">
-                <h3 class="text-3xl text-brand-white font-inter font-extrabold">Premium</h3>
-                <div class="rounded-xl flex bg-brand-white bg-opacity-20 items-center px-2">
-                    <img class="w-4 h-4" src="{{asset('svg/star.svg')}}" alt="star">
-                    <p class="text-brand-white font-inter">Most Popular</p>
+        <div class="flex flex-col justify-between rounded-xl bg-brand-primary-500 flex flex-col p-4 w-1/3">
+            <div>
+                <div class="flex w-full justify-between">
+                    <h3 class="text-3xl text-brand-white font-inter font-extrabold">Premium</h3>
+                    <div class="rounded-xl flex bg-brand-white bg-opacity-20 items-center px-2">
+                        <img class="w-4 h-4" src="{{asset('svg/star.svg')}}" alt="star">
+                        <p class="text-brand-white font-inter">Most Popular</p>
+                    </div>
                 </div>
+                <p class="text-brand-white font-inter">I need functional software.</p>
+                <p class="text-brand-gray-300 font-inter"><del>$599.99</del>/Mo</p>
+                <p class="text-brand-white font-inter font-extrabold text-3xl">$199.99/Mo</p>
+                <ul>
+                    @foreach ($table2 as $item)
+                    <li class="flex items-center space-x-2 mt-2">
+                        <img class="text-brand-white" src="{{asset('svg/check-white.svg')}}" alt="check mark">
+                        <p class="text-brand-white font-inter">{{$item}}</p>
+                    </li>
+                    @endforeach
+                </ul>
             </div>
-            <p class="text-brand-white font-inter">I need functional software.</p>
-            <p class="text-brand-gray-300 font-inter"><del>$599.99</del>/Mo</p>
-            <p class="text-brand-white font-inter font-extrabold text-3xl">$199.99/Mo</p>
-            <ul>
-                @foreach ($table2 as $item)
-                <li class="flex items-center space-x-2 mt-2">
-                    <img class="text-brand-white" src="{{asset('svg/check-white.svg')}}" alt="check mark">
-                    <p class="text-brand-white font-inter">{{$item}}</p>
-                </li>
-                @endforeach
-            </ul>
-            <a href="#">Get Premium</a>
+            <a class="bg-brand-white bg-opacity-20 w-full block rounded-xl text-center py-2 text-brand-white font-extrabold" href="#">Get Premium</a>
         </div>
-        <div class="bg-brand-gray-500 border-2 border-brand-gray-600 rounded-xl p-4 w-1/3">
-            <h3 class="text-3xl text-brand-white font-inter font-extrabold">Enterprise</h3>
-            <p class="text-brand-gray-300 font-inter">I need a full business solution.</p>
-            <p class="text-3xl text-brand-white font-inter font-extrabold">Contact for Price</p>
-            <ul>
-                @foreach($table3 as $item)
-                <li class="flex items-center space-x-2 mt-2">
-                    <img src="{{asset('svg/check.svg')}}" alt="check mark" />
-                    <p class="text-brand-gray-300 font-inter">{{$item}}</p>
-                @endforeach
-                </li>
-            </ul>
-            <a class="text-brand-white bg-gradient-to-r from-brand-gray-400 to-brand-gray-900 px-4 py-2 rounded-xl" href="#">Get Basic</a>
+        <div class="flex flex-col justify-between bg-brand-gray-500 border-2 border-brand-gray-600 rounded-xl p-4 w-1/3">
+            <div>
+                <h3 class="text-3xl text-brand-white font-inter font-extrabold">Enterprise</h3>
+                <p class="text-brand-gray-300 font-inter">I need a full business solution.</p>
+                <p class="text-3xl text-brand-white font-inter font-extrabold">Contact for Price</p>
+                <ul>
+                    @foreach($table3 as $item)
+                    <li class="flex items-center space-x-2 mt-2">
+                        <img src="{{asset('svg/check.svg')}}" alt="check mark" />
+                        <p class="text-brand-gray-300 font-inter">{{$item}}</p>
+                    @endforeach
+                    </li>
+                </ul>
+            </div>
+            <a class="text-center font-extrabold text-brand-white bg-gradient-to-r from-brand-gray-400 to-brand-gray-900 px-4 py-2 rounded-xl" href="#">Get Basic</a>
         </div>
     </div>
 </section>
