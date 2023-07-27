@@ -41,8 +41,8 @@
         Pricing Plans
     </h2>
     <p class="text-brand-white font-inter px-8 py-4 text-center max-w-7xl md:text-xl md:mt-6 lg:text-3xl">Join our expanding community today! Avail our exclusive Premium plan and secure a lifetime subscription at an <strong class="uppercase text-brand-primary-500">Exceptional discount of 70%</strong>. Act now, as this incredible offer is valid for this month only!</p>
-    <div class="w-full flex justify-between">
-        <div class="bg-brand-gray-500 border-2 border-brand-gray-600 rounded-xl flex flex-col justify-between p-4 w-1/3">
+    <div class="w-full flex justify-between space-x-2">
+        <div class="mt-24 bg-brand-gray-500 border-2 border-brand-gray-600 rounded-xl flex flex-col justify-between p-4 w-1/3">
             <div>
                 <h3 class="text-3xl text-brand-white font-inter font-extrabold">Basic</h3>
                 <p class="text-brand-gray-300 font-inter">I just want to get online.</p>
@@ -58,7 +58,7 @@
             </div>
             <a class="w-full block text-center font-extrabold text-brand-white bg-gradient-to-r from-brand-gray-400 to-brand-gray-900 px-4 py-2 rounded-xl" href="#">Get Basic</a>
         </div>
-        <div class="flex flex-col justify-between rounded-xl bg-brand-primary-500 flex flex-col p-4 w-1/3">
+        <div class="w-5/12 flex flex-col justify-between rounded-xl bg-brand-primary-500 p-4">
             <div>
                 <div class="flex w-full justify-between">
                     <h3 class="text-3xl text-brand-white font-inter font-extrabold">Premium</h3>
@@ -79,9 +79,9 @@
                     @endforeach
                 </ul>
             </div>
-            <a class="bg-brand-white bg-opacity-20 w-full block rounded-xl text-center py-2 text-brand-white font-extrabold" href="#">Get Premium</a>
+            <a class="mt-8 bg-brand-white bg-opacity-20 w-full block rounded-xl text-center py-2 text-brand-white font-extrabold" href="#">Get Premium</a>
         </div>
-        <div class="flex flex-col justify-between bg-brand-gray-500 border-2 border-brand-gray-600 rounded-xl p-4 w-1/3">
+        <div class="mt-24 flex flex-col justify-between bg-brand-gray-500 border-2 border-brand-gray-600 rounded-xl p-4 w-1/3">
             <div>
                 <h3 class="text-3xl text-brand-white font-inter font-extrabold">Enterprise</h3>
                 <p class="text-brand-gray-300 font-inter">I need a full business solution.</p>
