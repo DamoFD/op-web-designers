@@ -16,8 +16,12 @@ export default {
                 inter: ['Inter', ...defaultTheme.fontFamily.sans],
             },
             colors: {
+                'brand-gray-900': '#4A4A4A',
                 'brand-gray-800': '#100C19',
+                'brand-gray-600': '#515D72',
+                'brand-gray-500': '#1C1D2F',
                 'brand-gray-400': '#9C9C9C',
+                'brand-gray-300': '#C9C9C9',
                 'brand-gray-200': '#D1D1D1',
                 'brand-white': '#F8F8F8',
                 'brand-primary-600': '#B02244',
