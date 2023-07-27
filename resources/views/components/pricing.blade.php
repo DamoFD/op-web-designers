@@ -41,8 +41,8 @@
         Pricing Plans
     </h2>
     <p class="text-brand-white font-inter px-8 py-4 text-center max-w-7xl md:text-xl md:mt-6 lg:text-3xl">Join our expanding community today! Avail our exclusive Premium plan and secure a lifetime subscription at an <strong class="uppercase text-brand-primary-500">Exceptional discount of 70%</strong>. Act now, as this incredible offer is valid for this month only!</p>
-    <div class="w-full flex justify-between space-x-2">
-        <div class="mt-24 bg-brand-gray-500 border-2 border-brand-gray-600 rounded-xl flex flex-col justify-between p-4 w-1/3">
+    <div class="w-full flex flex-col items-center md:flex-row md:justify-between space-x-2">
+        <div class="mt-4 md:mt-24 bg-brand-gray-500 border-2 border-brand-gray-600 rounded-xl flex flex-col justify-between p-4 w-11/12 md:w-1/3">
             <div>
                 <h3 class="text-3xl text-brand-white font-inter font-extrabold">Basic</h3>
                 <p class="text-brand-gray-300 font-inter">I just want to get online.</p>
