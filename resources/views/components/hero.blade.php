@@ -33,6 +33,3 @@
         <x-sphere />
     </div>
 </section>
-<section id="pricing">
-
-</section>
