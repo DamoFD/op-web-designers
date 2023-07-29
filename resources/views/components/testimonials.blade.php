@@ -1,8 +1,8 @@
-<section class="flex py-8 flex-col items-center" id="testimonials">
+<section class="flex py-8 flex-col items-center lg:py-32" id="testimonials">
     <h2 class="uppercase bg-gradient-to-r from-[#FF7170] to-[#FFE57F] text-transparent bg-clip-text font-extrabold font-inter text-3xl text-center md:text-5xl lg:text-7xl">
         Over 300+ Happy Business Owners
     </h2>
-    <div class="w-11/12 md:w-3/4 lg:w-11/12 lg:flex">
+    <div class="w-11/12 md:w-3/4 lg:w-11/12 lg:flex lg:space-x-14 lg:mt-8">
         <x-testimonial-card
                 name="Marie Williams"
                 color="red"

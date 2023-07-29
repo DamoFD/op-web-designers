@@ -7,8 +7,8 @@
     <p class="text-brand-white font-inter p-2 text-center md:text-xl">
         {{ $quote }}
     </p>
-    <div class="flex space-x-2 items-center">
-        <img class="h-16 p-2 md:h-20" src="{{ asset('img/' . $imgSrc . '.png') }}" alt="{{ $name }}">
+    <div class="flex space-x-2 items-center lg:mt-4">
+        <img class="h-16 p-2 md:h-20 lg:h-16" src="{{ asset('img/' . $imgSrc . '.png') }}" alt="{{ $name }}">
         <p class="text-xl text-brand-white font-extrabold font-inter md:text-3xl">{{ $name }}</p>
     </div>
 </div>
