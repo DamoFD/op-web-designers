@@ -4,7 +4,7 @@
         The Key Elements of Successful Web Design
     </h2>
     <p class="text-brand-white font-inter px-8 py-4 text-center max-w-7xl md:text-xl md:mt-6 lg:text-3xl">Web design is <strong>not</strong> a one-size-fits-all solution. Each website must be tailored to the specific needs of the business it represents. At your Reno web design company, the leading Reno, NV business in web design, we understand the <strong>key elements</strong> of successful digital marketing needs:</p>
-    <div class="flex flex-col items-center md:mt-8 lg:flex-row lg:w-11/12 lg:space-x-4 lg:h-[570px]">
+    <div class="flex flex-col items-center md:mt-8 lg:flex-row lg:w-11/12 lg:space-x-4 lg:h-[570px] z-[2]">
 
         {{-- Card 1 --}}
         <div class="rounded-lg flex w-11/12 flex-col items-center bg-gradient-to-r from-[#03717C] to-[rgba(0,0,0,0)] pt-2 md:pt-4 lg:h-full">
