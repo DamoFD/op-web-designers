@@ -4,7 +4,7 @@
     </h2>
     <p class="text-brand-white font-inter px-8 py-4 text-center max-w-7xl md:text-xl md:mt-6 lg:text-3xl">Incorporating SEO strategies into your web design is <strong>crucial</strong> for online visibility. While you may have the most <em>visually stunning</em> website, it won't mean much if potential customers can't find it.
         As expert Reno web designers, we integrate SEO into <strong>every</strong> stage of our design process:</p>
-    <div class="w-11/12 flex flex-col items-center md:w-3/4">
+    <div class="w-11/12 flex flex-col items-center md:w-3/4 lg:flex-row lg:w-11/12 lg:mt-8 lg:space-x-4">
         <div class="w-full flex flex-col items-center mt-8">
             <x-icon-overlay color="red" icon="magnifying" />
                 <h3 class="font-extrabold text-brand-white text-3xl font-inter text-center mt-4 md:text-4xl">Keyword Integration</h3>
