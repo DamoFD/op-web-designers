@@ -32,6 +32,6 @@
             justify-center
             items-center"
         >
-            <img src="{{ asset('svg/' . $icon . '.svg') }}" alt="magnifying glass">
+            <img src="{{ asset('svg/' . $icon . '.svg') }}" alt="{{$icon}}">
         </div>
 </div>
